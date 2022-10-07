@@ -17,5 +17,6 @@ function selectionSort(array) {
     return array;
 }
 
+
 console.log(selectionSort(arr))
 console.log("count:", count)

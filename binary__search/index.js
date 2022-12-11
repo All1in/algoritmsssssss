@@ -1,5 +1,4 @@
 let arr = [-1, 0, 3, 5, 7, 9, 12];
-// console.log(arr.length);
 
 let search = function (nums, target) {
     let left = 0;
@@ -23,3 +22,5 @@ let search = function (nums, target) {
 }
 
 console.log(search(arr, 12));
+
+

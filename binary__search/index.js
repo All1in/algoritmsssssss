@@ -9,7 +9,6 @@ let search = function (nums, target) {
     while(left <= right) {
         mid = Math.round((right - left)/2) + left;
 
-
         if(target === nums[mid]) {
             return mid;
         } else if(target < nums[mid]) {
@@ -21,6 +20,20 @@ let search = function (nums, target) {
     return "Did not found this element"
 }
 
-console.log(search(arr, 12));
 
+function recursiveBinarySearch(array, item, start, end) {
+   let middle = Math.floor((start - end) / 2 )
+   if(item === array[middle]) {
+       return middle
+   }
+   if(item < array[middle]) {
+       return recursiveBinarySearch(array, item, start, middle - 1)
+   } else {
+      return recursiveBinarySearch(array, item, middle + 1, end)
+   }
+}
+
+
+// console.log(search(arr, 12));
+console.log(recursiveBinarySearch(arr, 12, 0, arr.length));
 

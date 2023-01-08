@@ -19,7 +19,6 @@ function quickSort(array) {
             more.push(array[i])
         }
     }
-    console.log('middle', middle)
     return [...quickSort(less), middle, ...quickSort(more)]
 }
 

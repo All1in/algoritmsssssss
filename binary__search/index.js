@@ -33,7 +33,5 @@ function recursiveBinarySearch(array, item, start, end) {
    }
 }
 
-
-// console.log(search(arr, 12));
 console.log(recursiveBinarySearch(arr, 12, 0, arr.length));
 
